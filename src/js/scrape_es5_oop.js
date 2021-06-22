@@ -52,13 +52,32 @@ ScrapeMovies.prototype.getText = function(methodType, target) {
     });
 }
 
+/**
+ * 
+ * @param {object} document 
+ * @param {string} selector 
+ * @returns html element
+ */
 ScrapeMovies.prototype.select = function(document, selector) {
     return document.querySelector(selector)
 }
+
+/**
+ * 
+ * @param {object} document 
+ * @param {string} selector 
+ * @returns DOM Array Of HTML Element
+ */
 ScrapeMovies.prototype.selectAll = function(document, selector) {
     return [...document.querySelectorAll(selector)]
 }
 
+/**
+ * 
+ * @param {object} document 
+ * @param {string} id 
+ * @returns html element
+ */
 ScrapeMovies.prototype.byId = function(document, id) {
     return document.getElementById(id)
 }

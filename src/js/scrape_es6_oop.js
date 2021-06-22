@@ -56,15 +56,11 @@ export class ScrapeMovie {
         });
     }
 
-    selectByCss(selector) {
-        return document.querySelector(selector)
-    }
-
     /**
      * 
      * @param {object} document 
      * @param {String} selector 
-     * @returns String
+     * @returns html element
      */
 
     select(document, selector) {
@@ -75,11 +71,21 @@ export class ScrapeMovie {
      * 
      * @param {object} document 
      * @param {String} selector 
-     * @returns Array
+     * @returns Array of html elements
      */
 
     selectAll(document, selector) {
         return [...document.querySelectorAll(selector)]
+    }
+
+    /**
+     * 
+     * @param {object} document 
+     * @param {string} id 
+     * @returns html element
+     */
+    byId(document, id) {
+        return document.getElementById(id)
     }
 
 }
