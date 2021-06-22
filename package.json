@@ -1,0 +1,23 @@
+{
+    "name": "scrapejs",
+    "version": "1.0.0",
+    "description": "small java script lib",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./src/js/proxy.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sheerien/scrapeJs.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sheerien/scrapeJs/issues"
+    },
+    "homepage": "https://github.com/sheerien/scrapeJs#readme",
+    "dependencies": {
+        "cors-anywhere": "^0.4.4"
+    }
+}
